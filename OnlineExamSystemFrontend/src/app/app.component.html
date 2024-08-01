@@ -1,0 +1,16 @@
+<app-nav *ngIf="!isAdminLoggedIn()" id="navbar" ></app-nav>
+
+<style>
+    #navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        
+    }
+</style>
+
+
+<router-outlet></router-outlet>
+
+
+<app-footer class="fixed-footer"></app-footer>

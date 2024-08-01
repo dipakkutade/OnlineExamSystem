@@ -1,0 +1,46 @@
+<app-adminnav></app-adminnav>
+
+<div style="margin: 20px;">
+    <h2>Add a Question</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div style="margin-bottom: 10px;">
+        <label for="qno">Question Number:</label>
+        <input type="number" id="qno" [(ngModel)]="question.qno" name="qno" style="width: 100%;" readonly>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" [(ngModel)]="question.subject" name="subject" style="width: 100%;" readonly>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="qtext">Question Text:</label>
+        <textarea id="qtext" [(ngModel)]="question.qtext" name="qtext" style="width: 100%;"></textarea>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="op1">Option 1:</label>
+        <input type="text" id="op1" [(ngModel)]="question.op1" name="op1" style="width: 100%;">
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="op2">Option 2:</label>
+        <input type="text" id="op2" [(ngModel)]="question.op2" name="op2" style="width: 100%;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="op3">Option 3:</label>
+        <input type="text" id="op3" [(ngModel)]="question.op3" name="op3" style="width: 100%;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="op4">Option 4:</label>
+        <input type="text" id="op4" [(ngModel)]="question.op4" name="op4" style="width: 100%;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" [(ngModel)]="question.answer" name="answer" style="width: 100%;" required>
+      </div>
+      <button *ngIf="questionCounter < 10" type="submit" style="padding: 5px 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Submit</button>
+      
+     
+<button *ngIf="questionCounter >= 10" type="button" style="padding: 5px 10px; background-color: #ca0062; color: white; border: none; cursor: pointer;" (click)="createExam()">Complete</button>
+
+
+    </form>
+  </div>
+  

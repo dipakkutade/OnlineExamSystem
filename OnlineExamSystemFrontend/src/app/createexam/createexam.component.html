@@ -1,0 +1,14 @@
+<app-adminnav></app-adminnav>
+
+<div style="margin: 20px;">
+    <h2>Add a Question</h2>
+    <form (ngSubmit)="onSubmit()">
+      
+      <div style="margin-bottom: 10px;">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" [(ngModel)]="subject" name="subject" style="width: 100%;">
+      </div>
+      <button type="submit" style="padding: 5px 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Submit</button>
+    </form>
+  </div>
+  

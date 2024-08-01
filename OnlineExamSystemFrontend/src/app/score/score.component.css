@@ -1,0 +1,44 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .score-card {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .answer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .answer-table th,
+  .answer-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .answer-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .answer-table td {
+    text-align: center;
+  }
+  
+  hr {
+    margin-bottom: 20px;
+  }
+  

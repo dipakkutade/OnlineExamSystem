@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes at least the height of the viewport */
+  }
+  
+  app-adminnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navigation is above other content */
+  }
+  
+  router-outlet {
+    flex: 1; /* Make the router-outlet take the remaining space */
+    padding-top: 60px; /* Adjust this value to match the height of your navigation */
+    padding-bottom: 60px; /* Adjust this value to match the height of your footer */
+    overflow-y: auto; /* Allow content to scroll if needed */
+  }
+  
+  app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the footer is above other content */
+  }
+  
